@@ -18,7 +18,7 @@ const BottomNav = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink exact to="/">
+                <NavLink exact to="/upload">
                     <AddSquareOutline id="icon-container-bigger" />
                 </NavLink>
             </li>

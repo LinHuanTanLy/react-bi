@@ -7,6 +7,7 @@ import Trends from "../pages/Main/Trends";
 import Shop from "../pages/Main/Shop";
 import Mine from "../pages/Main/Mine";
 import Message from "../pages/Message";
+import Upload from "../pages/Main/Upload";
 const AppRouter = () => {
     return <Router>
         <Switch>
@@ -16,6 +17,7 @@ const AppRouter = () => {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/trends" component={Trends} />
+                    <Route exact path="/upload" component={Upload} />
                     <Route exact path="/shop" component={Shop} />
                     <Route exact path="/mine" component={Mine} />
                 </Switch>
