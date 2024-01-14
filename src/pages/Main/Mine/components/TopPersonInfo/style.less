@@ -47,42 +47,104 @@
 }
 
 #person-info-bottom-container {
-  background-image: url("../../../../../../public/assets/goodsDetailbg618.webp");
-  height: 56px;
-  width: 100%;
-  border-radius: 12px;
-  margin-top: 12px;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 12px;
-  align-items: center;
-  padding: 0 12px;
-  .person-info-bottom-left {
+  .person-info-bottom-marking-container {
+    background-image: url("../../../../../../public/assets/goodsDetailbg618.webp");
+    height: 56px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 12px;
     display: flex;
-    img {
-      width: 36px;
-      height: 36px;
-    }
-    .person-info-bottom-swiper {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 12px;
+    justify-content: space-between;
+    margin-right: 12px;
+    align-items: center;
+    padding: 0 12px;
+    .person-info-bottom-left {
+      display: flex;
+      img {
+        width: 36px;
+        height: 36px;
+      }
+      .person-info-bottom-swiper {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 12px;
 
-      span {
-        font-size: 12px;
-        color: #ffffff;
+        span {
+          font-size: 12px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .person-info-bottom-right {
+      float: left;
+      display: flex;
+      div {
+        align-items: end;
+        border-radius: 50px;
+        padding: 4px 12px;
+        background-color: white;
+        span:first-child {
+          font-size: 10px;
+          color: #666666;
+        }
+        span:nth-child(2) {
+          font-size: 14px;
+          color: #666666;
+          margin: 0px 2px;
+        }
+        span:nth-child(3) {
+          font-size: 10px;
+          color: #666666;
+        }
       }
     }
   }
+}
 
-  .person-info-bottom-right {
-    float: left;
+.person-info-bottom-notice-container {
+  background-image: url("../../../../../../public/assets/me618bg.webp");
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  margin-top: 12px;
+  display: flex;
+  padding: 6px 12px;
+  justify-content: space-between;
+  align-items: center;
+  .person-info-bottom-notice-content {
     display: flex;
-    div {
-      align-items: end;
-      border-radius: 50px;
-      padding: 4px 12px;
-      background-color: white;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+      margin: 0px 6px;
+    }
+    .person-info-bottom-notice-swiper {
+      font-size: 12px;
+      color: #3c3c3c;
+      text-align: start;
+      display: flex;
+
+      span:first-child {
+        font-size: 12px;
+        color: #ff445e;
+        margin-right: 2px;
+      }
+      span:nth-child(2) {
+        font-size: 12px;
+        color: #3c3c3c;
+      }
+    }
+  }
+  .person-info-bottom-notice-more {
+    span:first-child {
+      font-size: 12px;
+      color: #666666;
+      margin: 0px 4px;
+    }
+    span:nth-child(2) {
+      font-size: 12px;
+      color: #666666;
     }
   }
 }

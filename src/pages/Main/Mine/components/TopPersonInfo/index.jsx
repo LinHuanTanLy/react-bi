@@ -9,7 +9,7 @@ const TopPersonInfo = () => {
     ];
 
     const swiperItem = marketingArray.map(item => (
-        <Swiper.Item>
+        <Swiper.Item key={item}>
             <span>{item}</span>
         </Swiper.Item>
     ))
@@ -50,22 +50,40 @@ const TopPersonInfo = () => {
 
             {/* 个人营销 */}
             <div id="person-info-bottom-container">
-                <div className="person-info-bottom-left">
-                    <img src="assets/goods_detail_youhui.png" alt="图片描述" />
-                    <div className="person-info-bottom-swiper">
-                        <span>全品类券，限时领取</span>
-                        <Swiper direction="vertical" style={{ '--height': '20px' }}
-                            indicator={() => null} autoplay={true} loop={true}>
-                            {swiperItem}
-                        </Swiper>
+                <div className="person-info-bottom-marking-container">
+                    <div className="person-info-bottom-left">
+                        <img src="assets/goods_detail_youhui.png" alt="图片描述" />
+                        <div className="person-info-bottom-swiper">
+                            <span>全品类券，限时领取</span>
+                            <Swiper direction="vertical" style={{ '--height': '20px' }}
+                                indicator={() => null} autoplay={true} loop={true}>
+                                {swiperItem}
+                            </Swiper>
+                        </div>
+                    </div>
+                    <div className="person-info-bottom-right">
+                        <div>
+                            <span>¥</span>
+                            <span>1.00</span>
+                            <span>立即开通</span>
+                        </div>
                     </div>
                 </div>
-                <div className="person-info-bottom-right">
+            </div>
+
+            {/* 个人通知 */}
+            <div className="person-info-bottom-notice-container">
+                <div className="person-info-bottom-notice-content">
                     <div>
-                        <span>¥</span>
-                        <span>1.00</span>
-                        <span>立即开通</span>
+                        <img src="assets/robot_pkg.webp" />
                     </div>
+                    <div className="person-info-bottom-notice-swiper">
+                        <span>"哈尔滨"大冻梨来袭</span>
+                        <span>南方小土豆快快来袭</span>
+                    </div></div>
+                <div className="person-info-bottom-notice-more">
+                    <span>|</span>
+                    <span>更多</span>
                 </div>
             </div>
         </div>
