@@ -49,19 +49,18 @@ const TopPersonInfo = () => {
             </div>
 
             {/* 个人营销 */}
-            <div id="person-info-bottom-container" className="clear-fix">
-
-                <div className="person-info-bottom-left float-left" >
+            <div id="person-info-bottom-container">
+                <div className="person-info-bottom-left">
                     <img src="assets/goods_detail_youhui.png" alt="图片描述" />
+                    <div className="person-info-bottom-swiper">
+                        <span>全品类券，限时领取</span>
+                        <Swiper direction="vertical" style={{ '--height': '20px' }}
+                            indicator={() => null} autoplay={true} loop={true}>
+                            {swiperItem}
+                        </Swiper>
+                    </div>
                 </div>
-                <div className="person-info-bottom-middle">
-                    <span>全品类券，限时领取</span>
-                    <Swiper direction="vertical" style={{ '--height': '20px' }}
-                        indicator={() => null} autoplay={true} loop={true}>
-                        {swiperItem}
-                    </Swiper>
-                </div>
-                <div className="person-info-bottom-right float-right">
+                <div className="person-info-bottom-right">
                     <div>
                         <span>¥</span>
                         <span>1.00</span>
